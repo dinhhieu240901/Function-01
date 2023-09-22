@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <p>
+    Sử dụng hàm confirm để nhận thông tin đầu vào và đưa ra quyết định dựa trên
+    những thông tin đó.
+  </p>
+  <body>
+    <script>
+      function confirmFunction(input) {
+        var result = confirm(input);
+        if (result == true) {
+          alert("Bạn đã chọn OK!");
+        } else {
+          alert("Bạn đã chọn Cancel!");
+        }
+      }
+      confirmFunction("Bạn có muốn xóa không?");
+    </script>
+  </body>
+</html>

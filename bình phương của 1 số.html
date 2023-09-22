@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tính bình phương</title>
+  </head>
+  <body>
+    <input
+      type="text"
+      id="inputNumber"
+      name="inputNumber"
+      oninput="Calculator()"
+    />
+    <p id="result"></p>
+    <script>
+      function square(number) {
+        var result = number * number;
+        return result;
+      }
+      function Calculator() {
+        let input = +document.getElementById("inputNumber").value;
+        let result = square(input);
+        document.getElementById("result").innerHTML = "Kết quả: " + result;
+      }
+      document.write("Bình phương của 5 là: " + square(5) + "<br>");
+      document.write("Bình phương của 10 là: " + square(10));
+    </script>
+  </body>
+</html>
